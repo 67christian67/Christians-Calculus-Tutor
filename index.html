@@ -2688,7 +2688,7 @@ function setFavicon(iconUrl) {
 function updateTitle() {
     if (!document.hidden) {
         currentSubject = getRandomSubject();
-        document.title = `Noahs Tutoring | ${currentSubject}`;
+        document.title = `Christians Tutoring | ${currentSubject}`;
     } else {
         document.title = "Home";
     }
@@ -2708,7 +2708,7 @@ document.addEventListener('visibilitychange', function() {
         setFavicon(inactiveIcon);
     } else {
         currentSubject = getRandomSubject();
-        document.title = `Noahs Tutoring | ${currentSubject}`;
+        document.title = `Christians Tutoring | ${currentSubject}`;
         setFavicon(activeIcon);
     }
 });
