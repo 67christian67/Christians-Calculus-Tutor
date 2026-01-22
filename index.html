@@ -1620,11 +1620,11 @@ function injectWatermark(htmlContent, gameTitle) {
   
                 const logo = document.createElement('img');
                 logo.src = 'https://raw.githubusercontent.com/NoahsAmazingTutoringHelp/Noahs-Calculus-Tutor/master/cuh.png';
-                logo.alt = "Noah's Tutoring Hub";
+                logo.alt = "Christian's Tutoring Hub";
                 logo.style.cssText = 'width: 16px !important; height: 16px !important; border-radius: 3px !important; display: block !important; pointer-events: none !important;';
 
                 const text = document.createElement('span');
-                text.textContent = 'Downloaded from Noah\\'s Tutoring Hub';
+                text.textContent = 'Downloaded from Christians\\'s Tutoring Hub';
                 text.style.cssText = 'pointer-events: none !important;';
 
                 watermark.appendChild(logo);
@@ -1662,7 +1662,7 @@ function injectWatermark(htmlContent, gameTitle) {
                 };
 
                 watermark.setAttribute('role', 'button');
-                watermark.setAttribute('aria-label', 'Visit Noah\\'s Tutoring Hub website');
+                watermark.setAttribute('aria-label', 'Visit Christians\\'s Tutoring Hub website');
                 watermark.setAttribute('tabindex', '0');
 
                 watermark.addEventListener('click', function(e) {
@@ -1674,7 +1674,7 @@ function injectWatermark(htmlContent, gameTitle) {
                     
                     setTimeout(() => {
                         this.style.transform = 'scale(1) !important';
-                        window.open('https://noahs-calculus-tutor.pages.dev/', '_blank');
+                        window.open('https://67christian67.github.io/Christians-Calculus-Tutor/', '_blank')
                     }, 100);
                 });
 
