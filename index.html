@@ -2770,7 +2770,7 @@
         <div class="logo-container" onclick="switchTab('lessons')" role="button" tabindex="0"
           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchTab('lessons');}">
           <img alt="Noah's Tutoring Hub" class="logo"
-            src="<img alt="Christian's Tutoring Hub" class="logo" src="images/logo.png" style="height: 70px; width: auto;">">
+            src="images/logo.png">
         </div>
         <div class="top-nav-actions">
           <div class="nav-tabs">
@@ -2797,7 +2797,7 @@
       <div class="home-hero">
         <div class="home-logo-wrap" id="homeLogoWrap">
           <img alt="Noah's Tutoring Hub" class="home-logo"
-            src="<img alt="Christian's Tutoring Hub" class="logo" src="images/logo.png" style="height: 70px; width: auto;">">
+            src="images/logo.png">
           <div class="home-logo-shine" id="homeLogoShine"></div>
         </div>
         <p class="home-subtitle">
@@ -5675,7 +5675,7 @@
 
     function updateLogoForCurrentTheme() {
       const currentTheme = localStorage.getItem('selectedTheme') || 'default';
-      const defaultLogo = "<img alt="Christian's Tutoring Hub" class="logo" src="images/logo.png" style="height: 70px; width: auto;">";
+      const defaultLogo = "images/logo.png";
 
       document.querySelectorAll('.logo, .home-logo').forEach(logoEl => {
         logoEl.src = defaultLogo;
@@ -5934,7 +5934,7 @@
 
       if (isDefaultTheme || isDefaultColor) {
         const baseSrc = logoEl.dataset.baseSrc ||
-          "<img alt="Christian's Tutoring Hub" class="logo" src="images/logo.png" style="height: 70px; width: auto;">";
+          "images/logo.png";
         if (logoEl.src !== baseSrc) {
           logoEl.src = baseSrc;
         }
@@ -6011,7 +6011,7 @@
       const currentTheme = localStorage.getItem('selectedTheme') || 'default';
 
       if (currentTheme === 'default') {
-        const defaultLogo = "<img alt="Christian's Tutoring Hub" class="logo" src="images/logo.png" style="height: 70px; width: auto;">";
+        const defaultLogo = "images/logo.png";
         document.querySelectorAll('.logo, .home-logo').forEach(logoEl => {
           if (logoEl.src !== defaultLogo) {
             logoEl.src = defaultLogo;
@@ -6033,7 +6033,7 @@
 
 
     function revertLogo() {
-      const defaultLogo = "<img alt="Christian's Tutoring Hub" class="logo" src="images/logo.png" style="height: 70px; width: auto;">";
+      const defaultLogo = "images/logo.png";
 
       const logoPreview = document.getElementById('logoPreview');
       const previewImg = logoPreview.querySelector('img');
@@ -7168,7 +7168,7 @@
         }
         setSiteLogos(settings.customLogo);
       } else {
-        const defaultLogo = "<img alt="Christian's Tutoring Hub" class="logo" src="images/logo.png" style="height: 70px; width: auto;">";
+        const defaultLogo = "images/logo.png";
         const logoPreview = document.getElementById('logoPreview');
         setSiteLogos(defaultLogo);
         if (logoPreview) {
